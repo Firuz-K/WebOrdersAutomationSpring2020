@@ -11,25 +11,20 @@ public class ConfigurationReader {
     static {
 
 
-
         try {
             FileInputStream file = new FileInputStream("configuration.properties");
             properties.load(file);
 
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
             throw new RuntimeException("Unable to find configuration.properties");
         }
 
     }
 
-    public static String getProperty(String keyWord){
+    public static String getProperty(String keyWord) {
         return properties.getProperty(keyWord);
     }
-
-
-
-
 
 
 }

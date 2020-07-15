@@ -1,4 +1,4 @@
-package com.weborders;
+package com.weborders.tests;
 
 import com.weborders.utilities.ConfigurationReader;
 import com.weborders.utilities.Driver;
@@ -6,11 +6,10 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 
-
 public abstract class TestBase {
 
     @BeforeMethod
-    public void setUp(){
+    public void setUp() {
 
         String URL = ConfigurationReader.getProperty("url");
 
@@ -21,13 +20,11 @@ public abstract class TestBase {
     }
 
     @AfterMethod
-    public void teraDown(){
+    public void teraDown() {
 
         Driver.closeDriver();
 
     }
-
-
 
 
 }
