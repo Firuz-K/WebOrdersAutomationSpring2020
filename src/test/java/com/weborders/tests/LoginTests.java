@@ -1,6 +1,7 @@
 package com.weborders.tests;
 
 import com.weborders.pages.LoginPage;
+import com.weborders.utilities.BrowserUtils;
 import com.weborders.utilities.Driver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -16,6 +17,7 @@ public class LoginTests extends TestBase {
 
         Assert.assertEquals(Driver.getDriver().getTitle(), "Web Orders", "Page title is wrong!");
 
+        BrowserUtils.takeScreenShot();
     }
 
 }
