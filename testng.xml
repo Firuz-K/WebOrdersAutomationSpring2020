@@ -1,11 +1,12 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
 <suite name="Test suit">
-    <test name="Order test">
+    <test name="Regression">
         <classes>
-            <!-- CLASS TO INCLUDE TO XML SUIT -->
             <class name="com.weborders.tests.OrderTest"/>
-            <class name="com.weborders.tests.LoginTests"></class>
+            <class name="com.weborders.tests.LoginTests"/>
+
         </classes>
     </test>
+
 </suite>
