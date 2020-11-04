@@ -12,16 +12,10 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
-
 import java.io.FileInputStream;
-
-import com.weborders.utilities.ExcelUtil;
 import com.weborders.utilities.ExcelUtil;
 import org.apache.poi.ss.usermodel.*;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
-
-import java.io.FileInputStream;
 
 public class ReadingFromExcel {
 
